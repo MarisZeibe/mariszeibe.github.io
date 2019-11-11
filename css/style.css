@@ -1,0 +1,27 @@
+.mainbox{
+    background-color: #ffff99;
+    width: 1200px;
+    margin: 0px auto;
+}
+.header{
+    background-color: #cccccc;
+}
+.left{
+    background-color: aqua;
+    width: 200px;
+    float: left;
+    height: auto;
+}
+.center{
+    background-color: chartreuse;
+    width: 800px;
+    float: left;
+}
+.right{
+    background-color: aquamarine;
+    width: 200px;
+    float: left;
+}
+.footer{
+    background-color: darkgreen;
+}
