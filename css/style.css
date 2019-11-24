@@ -1,5 +1,7 @@
 body{
     font-family: Arial, serif;
+    background-image: url("../img/background.png");
+    background-size: 100%;
 }
 .mainbox{
     background-color: #ffff99;
@@ -9,7 +11,11 @@ body{
 .menu{
     background-color: #cccccc;
     text-align: center;
-    height: 75px;
+    height: 4vw;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .menu>ul>li{
     padding: 10px 40px 10px 40px;
@@ -32,65 +38,88 @@ body{
 }
 .left{
     background-color: aqua;
-    width: 15%;
+    width: 10%;
     float: left;
-    height: 500px;
+    height: 1800px;
     margin: auto;
 }
-.accordion{
+.left>div{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4vw;
+}
+.left>div>div>.accordion{
     margin: 0 auto;
     height: 0;
-    color: rgba(0, 0, 0, 0);;
-    background-color: darkblue;
+    background-color: lightgray;
     line-height: 28px;
-    padding: 0 20px;
     box-sizing: border-box;
+    font-size: 0;
 }
-.left>div>label{
+.left>div>div>label{
     cursor: pointer;
-    background-color: blueviolet;
-    border-bottom: 1px solid dimgray;
+    background-color: #23af23;
+    border-bottom: 1px solid #289028;
     display: block;
     padding: 15px;
     width: 100%;
     color: #fff;
     font-weight: 400;
     box-sizing: border-box;
-    z-index: 100;
 }
-.left>div>input{
+.left>div>div>input{
     display: none;
 }
-.left>div>label{
+.left>div>div>label{
     font-weight: bolder;
     float: right;
 }
-.left>div>input:checked+label{
-    background-color: darkslateblue;
+.left>div>div>input:checked+label{
+    background-color: #289028;
 }
-.left>div>input:checked~.accordion{
+.left>div>div>input:checked~.accordion{
     height: auto;
-    color: #fff;
+    color: black;
     font-size: 16px;
     padding: 20px;
     transition: 0.5s;
 }
 .center{
     background-color: chartreuse;
-    width: 60%;
-    height: 500px;
+    width: 70%;
+    height: 1800px;
     float: left;
+    text-align: center;
+}
+.center>div{
+    padding: 1% 3% 1% 3%;
+    display: block;
+    text-align: left;
+    background-color: #289028;
+    width: 48vw;
+    margin: 1.5vw auto;
+    border-radius: 1vw;
+    height: 20vw;
+    position: relative;
+}
+.center>div>img{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 80%;
 }
 .right{
     background-color: aquamarine;
-    width: 25%;
+    width: 20%;
     float: left;
-    height: 500px;
+    height: 1800px;
 }
 .footer{
     background-color: darkgreen;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px){
     .mainbox{
         width: 100%;
     }
