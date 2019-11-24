@@ -1,7 +1,10 @@
+body{
+    font-family: Arial, serif;
+}
 .mainbox{
     background-color: #ffff99;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
 }
 .menu{
     background-color: #cccccc;
@@ -18,20 +21,59 @@
 
 }
 .menu>ul>li>a{
-    background-color: aquamarine;
+    background-color: #23af23;
     padding: 5px 10px 5px 10px;
     text-decoration: none;
-    color: dimgray;
+    color: white;
     border-radius: 8px;
 }
 .menu>ul>li>a:hover, menu>ul>li>a:active{
-    background-color: aqua;
+    background-color: #289028;
 }
 .left{
     background-color: aqua;
     width: 15%;
     float: left;
     height: 500px;
+    margin: auto;
+}
+.accordion{
+    margin: 0 auto;
+    height: 0;
+    color: rgba(0, 0, 0, 0);;
+    background-color: darkblue;
+    line-height: 28px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.left>div>label{
+    cursor: pointer;
+    background-color: blueviolet;
+    border-bottom: 1px solid dimgray;
+    display: block;
+    padding: 15px;
+    width: 100%;
+    color: #fff;
+    font-weight: 400;
+    box-sizing: border-box;
+    z-index: 100;
+}
+.left>div>input{
+    display: none;
+}
+.left>div>label{
+    font-weight: bolder;
+    float: right;
+}
+.left>div>input:checked+label{
+    background-color: darkslateblue;
+}
+.left>div>input:checked~.accordion{
+    height: auto;
+    color: #fff;
+    font-size: 16px;
+    padding: 20px;
+    transition: 0.5s;
 }
 .center{
     background-color: chartreuse;
