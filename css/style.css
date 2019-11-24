@@ -1,27 +1,55 @@
 .mainbox{
     background-color: #ffff99;
-    width: 1200px;
-    margin: 0px auto;
+    width: 80%;
+    margin: auto;
 }
-.header{
+.menu{
     background-color: #cccccc;
+    text-align: center;
+    height: 75px;
+}
+.menu>ul>li{
+    padding: 10px 40px 10px 40px;
+    position: relative;
+    top: 15px;
+    font-family: Calibri, serif;
+    font-size: 25px;
+    display: inline-block;
+
+}
+.menu>ul>li>a{
+    background-color: aquamarine;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    color: dimgray;
+    border-radius: 8px;
+}
+.menu>ul>li>a:hover, menu>ul>li>a:active{
+    background-color: aqua;
 }
 .left{
     background-color: aqua;
-    width: 200px;
+    width: 15%;
     float: left;
-    height: auto;
+    height: 500px;
 }
 .center{
     background-color: chartreuse;
-    width: 800px;
+    width: 60%;
+    height: 500px;
     float: left;
 }
 .right{
     background-color: aquamarine;
-    width: 200px;
+    width: 25%;
     float: left;
+    height: 500px;
 }
 .footer{
     background-color: darkgreen;
+}
+@media only screen and (max-width: 768px) {
+    .mainbox{
+        width: 100%;
+    }
 }
