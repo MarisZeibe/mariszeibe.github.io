@@ -64,7 +64,7 @@ body{
     background-color: #aeaeae;
     width: 15%;
     float: left;
-    height: 1851.6px;
+    height: 1850px;
     margin: auto;
 }
 .left>div{
@@ -111,7 +111,7 @@ body{
 .center{
     background-color: #4ecfdd;
     width: 65%;
-    height: 1851.6px;
+    height: 1850px;
     float: left;
 }
 .center>div{
@@ -155,7 +155,7 @@ body{
 .center>div>div>ul{
     text-align: left;
     display: inline-block;
-    width: 650px;
+    width: 590px;
 }
 .center>div>div>ul>li{
     margin-top: 10px;
@@ -164,7 +164,7 @@ body{
     background-color: #aeaeae;
     width: 20%;
     float: left;
-    height: 1851.6px;
+    height: 1850px;
 }
 footer{
     background-color: lightgray;
