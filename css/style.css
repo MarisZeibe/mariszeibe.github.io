@@ -195,8 +195,104 @@ footer{
     float: end;
     display: inline-block;
 }
+.dropdown{
+    display: none;
+}
+.dropbtn{
+    display: none;
+}
+.dropdown-content{
+    display: none;
+}
+
 @media only screen and (max-width: 768px){
     .mainbox{
         width: 100%;
     }
+    .left{
+        width: 100%;
+        height: auto;
+    }
+    .left>div{
+        position: relative;
+        top: 0;
+    }
+    .center{
+        width: 100%;
+        height: auto;
+    }
+    .center>div{
+        width: 90%;
+    }
+    .center>div>div>ul{
+        width: 90%;
+    }
+    .right{
+        width: 100%;
+        height: auto;
+    }
+    .right>div{
+        margin: 20px auto;
+        position: relative;
+        top: 0;
+        width: 90%;
+        height: auto;
+    }
+    .right>div>p{
+        display: inline-block;
+        padding: 10px 10px 40px;
+    }
+    .menu>ul>li{
+        display: none;
+    }
+    .menu>div{
+        display: inline-block;
+        position: relative;
+        float: left;
+        margin: 20px 5px 0 0;
+        font-size: 25px;
+    }
+    .menu>img{
+        height: 40px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .dropbtn {
+        background-color: #23af23;
+        color: white;
+        padding: 8px;
+        font-size: 16px;
+        border: none;
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    .dropdown{
+        position: relative;
+        display: inline-block;
+        margin: 0;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 80px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+        font-size: 12px;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 8px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: #289028;}
 }
