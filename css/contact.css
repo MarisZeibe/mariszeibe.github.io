@@ -1,0 +1,33 @@
+.right{
+    height: 826px;
+}
+.center{
+    height: 826px;
+}
+.center>div{
+    height: 730px;
+}
+.center>div>form{
+    margin-top: 50px;
+}
+.center>div>form>div>label {
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    margin-top: 12px;
+    width: 60px;
+}
+.center>div>form>div>input{
+    width: 850px;
+    margin: 10px;
+}
+.center>div>form>div>textarea{
+    width: 850px;
+    max-width: 850px;
+    height: 200px;
+    max-height: 380px;
+    margin: 10px;
+}
+.left{
+    height: 826px;
+}
