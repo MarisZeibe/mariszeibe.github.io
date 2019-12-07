@@ -9,6 +9,14 @@ a{
 a:active, a:hover{
     color: black;
 }
+a:not([href]){
+    color: dimgray;
+    cursor: default;
+}
+a:not([href]):active, a:not([href]):hover{
+    color: dimgray;
+    cursor: default;
+}
 body{
     font-family: Arial, serif;
     background-image: url("../img/background.png");
