@@ -1,0 +1,20 @@
+.right{
+    height: 1300px;
+}
+.center{
+    height: 1300px;
+}
+.left{
+    height: 1300px;
+}
+@media only screen and (max-width: 768px){
+    .left{
+        height: auto;
+    }
+    .center{
+        height: auto;
+    }
+    .right{
+        height: auto;
+    }
+}
