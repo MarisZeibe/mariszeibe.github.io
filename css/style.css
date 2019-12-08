@@ -139,6 +139,24 @@ a:not([href]):active, a:not([href]):hover{
     font-size: 0.8vw;
     line-height: 1vw;
 }
+.anchor{
+    float: left;
+    margin-top: calc(-90px - 2%);
+}
+.top, .top:focus{
+    z-index: 10000;
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+    font-size: 2vw!important;
+    padding: 0.5vw 1vw!important;
+    border-radius: 1vw!important;
+    background-color: rgba(23, 23, 23, 0.51);
+    border-width: 0;
+}
+.top:hover, .top:active{
+    background-color: rgba(23, 23, 23, 0.8);
+}
 
 @media only screen and (max-width: 1440px){
     .navbar{
@@ -178,6 +196,9 @@ a:not([href]):active, a:not([href]):hover{
         line-height: 100px;
         padding: 50px 17px;
         top: calc(71px + 1vw);
+    }
+    .anchor{
+        margin-top: calc(-70px - 2%);
     }
 }
 @media only screen and (max-width: 991px) {
@@ -257,5 +278,8 @@ a:not([href]):active, a:not([href]):hover{
     .post > div > p, .post > div > div > ul > li{
         font-size: 1.5vw;
         line-height: 1.8vw;
+    }
+    .anchor{
+        margin-top: calc(-70px - 2%);
     }
 }
