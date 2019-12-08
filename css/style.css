@@ -116,9 +116,10 @@ a:not([href]):active, a:not([href]):hover{
     margin-bottom: 2%;
     background-color: white;
 }
-.post > img{
+.post > a > img{
     padding: 0;
     border-radius: 1vw 0 0 1vw;
+    width: 100%;
 }
 .post > div{
     padding: 2% 2% 0 2%;
@@ -156,6 +157,10 @@ a:not([href]):active, a:not([href]):hover{
 }
 .top:hover, .top:active{
     background-color: rgba(23, 23, 23, 0.8);
+}
+.lb>img{
+    height: 100px;
+    margin: 10px;
 }
 
 @media only screen and (max-width: 1440px){
