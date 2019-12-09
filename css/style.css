@@ -235,8 +235,8 @@ a:not([href]):active, a:not([href]):hover{
         font-size: 2.5vw;
     }
     .post > div > p, .post > div > div > ul > li{
-        font-size: 1vw;
-        line-height: 1.2vw;
+        font-size: 1.2vw;
+        line-height: 1.4vw;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -278,13 +278,19 @@ a:not([href]):active, a:not([href]):hover{
         height: 30vw;
     }
     .post > div > a{
-        font-size: 3vw;
+        font-size: 6vw;
     }
     .post > div > p, .post > div > div > ul > li{
-        font-size: 1.5vw;
-        line-height: 1.8vw;
+        font-size: 3vw;
+        line-height: 3.5vw;
     }
+	.post > a > img{
+		border-radius: 1vw 1vw 0 0;
+	}
     .anchor{
         margin-top: calc(-70px - 2%);
     }
+	.table{
+		font-size: 2vw;
+	}
 }
